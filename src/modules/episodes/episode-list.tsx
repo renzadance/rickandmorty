@@ -1,9 +1,12 @@
-import { useState } from "react";
 import { episodeDto } from "./api-episode";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export function EpisodeList({ data }: { data: episodeDto[] }) {
-  const [isOpenSeason, setIsOpenSeason] = useState<Record<string, boolean>>({});
-
   const episodesBySeason = data.reduce(
     (acc: Record<string, episodeDto[]>, episode) => {
       const season = episode.episode.slice(2, 3); // "S01" из "S01E01"
@@ -18,36 +21,24 @@ export function EpisodeList({ data }: { data: episodeDto[] }) {
 
   const seasonsList = Object.keys(episodesBySeason);
 
-  const handleOpenSeason = (season: string) => {
-    setIsOpenSeason((prev) => ({
-      ...prev,
-      [season]: !prev[season],
-    }));
-  };
-
   return (
     <div>
       {seasonsList.map((season) => (
         <div className="mb-5" key={season}>
-          <button
-            onClick={() => handleOpenSeason(season)}
-            className="bg-neutral-900 p-5 w-96"
-          >
-            <h2 className="text-white/60 text-3xl font-bold">
-              SEASON {season}
-            </h2>
-          </button>
-          {isOpenSeason[season] && (
-            <ul>
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value={`season-${season}`}>
+              <AccordionTrigger className="text-xl">
+                SEASON {season}
+              </AccordionTrigger>
               {episodesBySeason[season].map((episode) => (
                 <div key={episode.id}>
-                  <p>
-                    {episode.id} - {episode.name}
-                  </p>
+                  <AccordionContent>
+                    EP{episode.id} ꟷ {episode.name}
+                  </AccordionContent>
                 </div>
               ))}
-            </ul>
-          )}
+            </AccordionItem>
+          </Accordion>
         </div>
       ))}
     </div>
