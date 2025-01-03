@@ -5,8 +5,8 @@ import { Search } from "./search";
 import { PaginationCharacters } from "./pagination-characters";
 import { CharacterList } from "./character-list";
 import { useCharacterList } from "./use-character-list";
-import { DeleteFilters } from "./icons/delete-filters";
 import { Logo } from "@/components/logo";
+import { ResetFiltersButton } from "./reset-filters-button";
 
 export function CharacterLayout() {
   const [isPage, setIsPage] = useState<number>(1);
@@ -93,8 +93,7 @@ export function CharacterLayout() {
             gender
           </Dropdown>
 
-          <button
-            className="rounded-full w-10 h-10 flex justify-center items-center hover:bg-neutral-800 transition-colors"
+          <ResetFiltersButton
             onClick={() => {
               setIsPage(1);
               setSearchQuery("");
@@ -104,9 +103,7 @@ export function CharacterLayout() {
                 gender: "",
               });
             }}
-          >
-            <DeleteFilters />
-          </button>
+          />
         </div>
 
         <div className="mt-10 flex justify-center">
