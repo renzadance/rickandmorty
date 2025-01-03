@@ -1,0 +1,39 @@
+{
+  "seasons_info": [
+    {
+      "id": "1",
+      "title": "Season 1",
+      "episodes": "11",
+      "ait_date": "December 2, 2013 - April 14, 2014",
+      "description": "The first season introduces us to Rick Sanchez, an eccentric and alcoholic scientist, and his kind-hearted but often naive grandson, Morty Smith. Together, they embark on outrageous adventures across dimensions, encountering alien species, parallel universes, and dystopian societies. Key episodes include 'Meeseeks and Destroy,' where the duo faces the chaotic consequences of the existence of Mr. Meeseeks, and 'Rick Potion No. 9,' which explores the horrifying aftermath of a love potion gone wrong. This season sets the tone for the series, blending absurd humor, science fiction, and moments of emotional depth."
+    },
+    {
+      "id": "2",
+      "title": "Season 2",
+      "episodes": "10",
+      "air_date": "July 26, 2015 - October 4, 2015",
+      "description": "Season 2 dives deeper into the relationship dynamics of the Smith family while expanding the show's sci-fi scope. Rick and Morty face interdimensional threats, time loops, and surreal adventures. Highlights include 'Total Rickall,' where the family battles a flood of memory-implanting parasites, and 'The Ricks Must Be Crazy,' featuring a mind-bending exploration of a micro-universe inside Rick's car battery. The season balances wacky humor with existential dilemmas, showcasing the darker consequences of Rick's reckless genius."
+    },
+    {
+      "id": "3",
+      "title": "Season 3",
+      "episodes": "10",
+      "air_date": "April 1, 2017 (special), July 30, 2017 - October 1, 2017",
+      "description": "Season 3 takes the series to new heights with high-concept storytelling and fan-favorite episodes. The season begins with 'The Rickshank Rickdemption,' where Rick engineers a daring escape from intergalactic prison. 'Pickle Rick,' an Emmy-winning episode, features Rick transforming himself into a pickle to avoid family therapy, leading to a chaotic adventure involving sewer rats and an Eastern European assassin. The season explores the consequences of Rick's actions, the fragility of family relationships, and deeper character development for Morty and Summer."
+    },
+    {
+      "id": "4",
+      "title": "Season 4",
+      "episodes": "10",
+      "air_date": "November 10, 2019 - May 31, 2020",
+      "description": "Divided into two halves, Season 4 continues the tradition of mind-bending escapades and satirical humor. In 'The Old Man and the Seat,' Rick creates a private toilet sanctuary but faces an existential crisis when it's violated. The season also features 'Never Ricking Morty,' a meta-episode that parodies the concept of storytelling itself. Season 4 delves into themes of individuality, mortality, and the cyclical nature of life, while maintaining the show's signature absurdity."
+    },
+    {
+      "id": "5",
+      "title": "Season 5",
+      "episodes": "10",
+      "air_date": "June 20, 2021 - September 5, 2021",
+      "description": "Season 5 introduces bizarre new worlds and characters, including Rick's nemesis, Mr. Nimbus, and a planet ravaged by Morty's 'Captain Planet'-style romance. 'Rickmurai Jack,' the season finale, reveals key backstory elements about Rick's past and his feud with the Citadel of Ricks. This season is a blend of humor, action, and emotional storytelling, receiving praise for its creativity and deeper exploration of Rick's psyche."
+    }
+  ]
+}
