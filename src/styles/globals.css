@@ -33,3 +33,8 @@ html {
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
